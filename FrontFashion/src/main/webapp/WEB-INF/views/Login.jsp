@@ -33,7 +33,7 @@
     <button type="submit" class="btn btn-primary" >Login</button> 
     </form>
     </div>
-    <p class="botto-text">A website by Digitalkart</p>
+    <p class="botto-text">A website by Aaron</p>
      </div></div></div>
 
 

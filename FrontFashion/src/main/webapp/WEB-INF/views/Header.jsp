@@ -17,9 +17,8 @@
 <body>
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 			<!-- Brand/logo -->
-					<a class="navbar-brand" href="#">DigitalKart</a>
+					<a class="navbar-brand" href="#">OnlineCart</a>
 				
-
 				<!-- Links -->
 				
 			<c:if test="${!sessionScope.loggedIn}">
