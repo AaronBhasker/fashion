@@ -25,8 +25,6 @@ import com.niit.model.Product;
 import com.niit.model.Supplier;
 import com.niit.model.User;
 
-
-
 @Configuration
 @EnableTransactionManagement
 @ComponentScan("com.niit")
@@ -38,7 +36,7 @@ public class DBConfig {
 		public DataSource getDataSource() {
 		    DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		    dataSource.setDriverClassName("org.h2.Driver");
-		    dataSource.setUrl("jdbc:h2:tcp://localhost/~/test");
+		    dataSource.setUrl("jdbc:h2:tcp://localhost/~/project1");
 		  
 		    dataSource.setUsername("sa");
 		    dataSource.setPassword("");
@@ -62,6 +60,7 @@ public class DBConfig {
 	            localsessionFactorybuilder.addAnnotatedClass(Cart.class);
 	            localsessionFactorybuilder.addAnnotatedClass(OrderDetail.class);
 	            localsessionFactorybuilder.addAnnotatedClass(CartItem.class);
+	            localsessionFactorybuilder.addAnnotatedClass(Orders.class);
 	            
 	            
 

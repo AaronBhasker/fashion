@@ -25,7 +25,7 @@ public static void Initialize()
 	productDAO=(ProductDAO)context.getBean("productDAO");
 }
 @Test
-@Ignore
+
 public void addProductTest()
 {
 
@@ -55,7 +55,7 @@ public void addProductTest()
 @Ignore
 public void updateProductTest()
 {
-	Product product=productDAO.getProductById(5);
+	Product product=productDAO.getProductById(34);
 	product.setProductDesc("lenovo");
 	assertTrue("problem is updating the product",productDAO.updateProduct(product));
 }
@@ -63,7 +63,7 @@ public void updateProductTest()
 @Ignore
 public void removeProductTest()
 {
-	Product product=productDAO.getProductById(5);
+	Product product=productDAO.getProductById(35);
 	assertTrue("problem in deleting the product",productDAO.removeProduct(product));
 }
 @Test
@@ -71,8 +71,8 @@ public void removeProductTest()
 public void getProductByIdTest()
 {
 	//Product product=productDAO.getProductById(20);
-	assertNotNull("Object should be null", productDAO.getProductById(6));
-	Product product=productDAO.getProductById(6);
+	assertNotNull("Object should be null", productDAO.getProductById(34));
+	Product product=productDAO.getProductById(34);
 	System.out.println("Product Id:"+product.getProductid());
 	System.out.println("Product Name:"+product.getProductname());
 

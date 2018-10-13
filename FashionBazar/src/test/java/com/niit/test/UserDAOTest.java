@@ -22,7 +22,7 @@ public class UserDAOTest {
 		userDAO=(UserDAO)context.getBean("userDAO");
 	}
 	@Test
-	@Ignore
+	
 	public void registerUserTest()
 	{
 		User user=new User();
@@ -39,16 +39,16 @@ public class UserDAOTest {
 	@Ignore
 	public void modifyUserTest()
 	{
-		User user=userDAO.getUser("abi");
+		User user=userDAO.getUser("Abdul");
 		user.setMobileno("9487393622");
 		assertTrue("problem in updating the user",userDAO.modifyUser(user));
 	}
     @Test
-    //@Ignore
+    @Ignore
     public void getUser()
     {
-    	assertNotNull("object should be null",userDAO.getUser("abi"));
-    	User user=userDAO.getUser("abi");
+    	assertNotNull("object should be null",userDAO.getUser("Abdul"));
+    	User user=userDAO.getUser("Abdul");
     	System.out.println("Username: "+user.getUsername());
     	System.out.println("Password: "+user.getPassword());
     	System.out.println("Customer Name: "+user.getCustomername());

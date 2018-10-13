@@ -26,7 +26,6 @@ public class CategoryDAOTest {
 	 	categoryDAO=(CategoryDAO)context.getBean("categoryDAO");
 	 }
 	 @Test
-	 @Ignore
 	 public void addCategoryTest()
 	 {
 
@@ -45,7 +44,7 @@ public class CategoryDAOTest {
 	   @Test
 		public void updateCategoryTest()
 		{
-			Category category=categoryDAO.getCategoryById(4);
+			Category category=categoryDAO.getCategoryById(48);
 			category.setCategoryDesc("all the xiomi mobile with smart features");
 			assertTrue("problem in updating the category", categoryDAO.updateCategory(category));
 		}
@@ -55,8 +54,8 @@ public class CategoryDAOTest {
 		public void getCategoryByIdTest()
 		{
 			//Category category=categoryDAO.getCategoryById(2);
-			assertNotNull("displaying the respected category name by its category id", categoryDAO.getCategoryById(4));
-			Category category=categoryDAO.getCategoryById(4);
+			assertNotNull("displaying the respected category name by its category id", categoryDAO.getCategoryById(49));
+			Category category=categoryDAO.getCategoryById(49);
 			System.out.println("Product Id:"+category.getCategoryid());
 			System.out.println("Product Name:"+category.getCategoryName());
 		}
@@ -75,11 +74,11 @@ public class CategoryDAOTest {
 			}
 		}
 	
-//@Ignore
+@Ignore
 @Test
 		public void removeCategoryTest()
 		{
-			Category category=categoryDAO.getCategoryById(4);
+			Category category=categoryDAO.getCategoryById(48);
 			assertTrue("the removed category is as follows", categoryDAO.removeCategory(category));
 		}
 
