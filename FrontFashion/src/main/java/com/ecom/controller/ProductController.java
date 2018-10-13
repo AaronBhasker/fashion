@@ -86,7 +86,7 @@ public class ProductController {
 		
 		//=> Image Uploading Started
 		
-		String imagePath="F:\\New folder\\FrontFashion\\src\\main\\webapp\\WEB-INF\\resources";
+		String imagePath="C:\\Users\\Aaron\\eclipse-workspace\\FrontFashion\\src\\main\\webapp\\WEB-INF\\resources\\images";
 		imagePath=imagePath+String.valueOf(product.getProductid())+".jpg";
 		
 		File myFile=new File(imagePath);

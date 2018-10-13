@@ -60,7 +60,7 @@
   <c:forEach items="${productList}" var="product">
  
   <div class="col-md-4">
-  <img src="<c:url value='/resources/images/images${product.productid}.jpg' ></c:url>" width="200 px" height="300 px"/><br />
+  <img src="<c:url value='/resources/images${product.productid}.jpg' ></c:url>" width="200 px" height="300 px"/><br />
   <p>Product Name: ${product.productname}</p><br />
   <p>Price: ${product.price}</p><br />
   <p>Quantity: ${product.quantity}</p>

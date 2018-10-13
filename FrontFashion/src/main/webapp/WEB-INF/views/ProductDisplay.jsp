@@ -7,7 +7,7 @@
 </tr>
 <tr>
 	<td rowspan="9">
-			<img src="<c:url value="/resources/images/images${productInfo.productid}.jpg"/>" width="300" height="400"/>
+			<img src="<c:url value="/resources/images${productInfo.productid}.jpg"/>" width="300" height="400"/>
 	</td>
 </tr>
 <tr>
