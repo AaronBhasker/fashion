@@ -1,6 +1,6 @@
 # fashion
 Project name:
-DigiKart
+OnlineCart
 
 Project Description:
 -The website displays a wide range of mobiles and also used to order mobile products
